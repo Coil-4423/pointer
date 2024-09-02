@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build main.cpp",
+            "type": "shell",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "C:/Users/sumit/OneDrive/Documentos/cpp/1/main.cpp",  // Use forward slashes or double backslashes
+                "-o",
+                "C:/Users/sumit/OneDrive/Documentos/cpp/1/main.exe"   // Use forward slashes or double backslashes
+            ],
+            "options": {
+                "shell": {
+                    "executable": "C:/msys64/usr/bin/bash.exe",
+                    "args": ["-c"]
+                },
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task to compile main.cpp using g++ in MSYS2."
+        }
+    ]
+}
